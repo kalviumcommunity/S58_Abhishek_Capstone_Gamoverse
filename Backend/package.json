@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "abhishek",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABHIKALVIUM/Capstone1.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "bugs": {
+    "url": "https://github.com/ABHIKALVIUM/Capstone1/issues"
+  },
+  "homepage": "https://github.com/ABHIKALVIUM/Capstone1#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
