@@ -6,6 +6,8 @@ const data_routes=require('./Routes/data_routes')
 
 
 
+app.use(express.json())
+
 const PORT=process.env.PORT;
 
 app.use('/data',data_routes)
