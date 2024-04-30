@@ -25,5 +25,31 @@ data_routes.post("/postdata", async (req, res) => {
     
 });
 
+data_routes.put("/updatedata/:id",async (req,res)=>{
+    let payload=req.body;
+    let id=req.params.id
+    try {
+      let result=await gameModel.findByIdAndUpdate(id,payload)
+      res.json({msg:"Updated the document successfully"})
+    } catch (error) {
+      console.log(error)
+      res.send(error)
+    }
+    });
+
+
+    data_routes.patch("/updatedata/:id",async (req,res)=>{
+        let payload=req.body;
+        let id=req.params.id
+        console.log(id)
+        try {
+          let result=await gameModel.findByIdAndUpdate(id,payload)
+          res.json({msg:"Updated the document successfully"})
+        } catch (error) {
+          console.log(error)
+          res.send(error)
+        }
+        });
+
 module.exports=data_routes;
 

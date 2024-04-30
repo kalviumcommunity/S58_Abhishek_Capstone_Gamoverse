@@ -24,3 +24,5 @@ Day 5.Frontend Development:
 
 Tech Stacks:
 React.js,Node.js,Express.js
+
+Deployed Link: https://s58-abhishek-capstone-gamoverse-4.onrender.com/data/getdata
