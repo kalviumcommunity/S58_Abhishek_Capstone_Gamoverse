@@ -5,9 +5,9 @@ const gameSchema=new mongoose.Schema({
         name: String,
         discount_percentage: Number,
         img_link: String,
-        description:String,
-        Epic:String,
-        Steam:String
+        description: String,
+        Steam: String,
+        Epic: String
 })
 
 const gameModel=mongoose.model("game_datas",gameSchema);
