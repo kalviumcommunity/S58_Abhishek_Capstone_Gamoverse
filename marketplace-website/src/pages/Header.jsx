@@ -17,7 +17,9 @@ import './Header.css';
                     <span className="bag">0</span>
                 </a>
                 <div className="avatar">
-                    <a href="#"><img src="" alt="User Image"/></a>
+                    <a href="#">
+                    <img src="" alt="User Image"/>
+                    </a>
                     <div className="user">
                         <span>Username</span>
                         <a href="#">View Profile</a>
