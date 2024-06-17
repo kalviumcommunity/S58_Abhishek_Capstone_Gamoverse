@@ -18,7 +18,6 @@ function Main(){
         .then(res=>res.json())
         .then(data=>{
             setGames(data)
-            console.log(data);
         })
         .catch(e=>console.log(e.message));
     }
@@ -31,10 +30,6 @@ function Main(){
         <main>
             <Sidemenu active={active}/>
             <div className={`banner ${active?'active':undefined}`}>
-                <img id="gta" src={gta}></img>
-                <h2>GTA 5</h2>
-                <h2>Price:1299</h2>
-                <h2>Rating: 4.5/10</h2>
 
             <Header toggleActive={handleToggleActive}/>
             <div className="container-fluid">

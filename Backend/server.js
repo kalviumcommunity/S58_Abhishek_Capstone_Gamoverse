@@ -4,8 +4,6 @@ require('dotenv').config();
 const connection=require('./config/db');
 const data_routes=require('./Routes/data_routes')
 
-
-
 app.use(express.json())
 
 const PORT=process.env.PORT;
