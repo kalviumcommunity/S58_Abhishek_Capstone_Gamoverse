@@ -3,7 +3,9 @@ var data_routes=express.Router();
 const gameModel=require('../Model/DataModel')
 
 
- data_routes.get("/getdata",async(req,res)=>{
+ 
+
+data_routes.get("/getdata",async(req,res)=>{
     try{
         // const gamedata=await gameModel.find();
         res.send([
@@ -113,6 +115,8 @@ const gameModel=require('../Model/DataModel')
     }
 })
 
+
+
 data_routes.post("/postdata", async (req, res) => {
     console.log(req.body);
     
@@ -124,6 +128,8 @@ data_routes.post("/postdata", async (req, res) => {
     }
     
 });
+
+
 
 data_routes.put("/updatedata/:id",async (req,res)=>{
     let payload=req.body;
