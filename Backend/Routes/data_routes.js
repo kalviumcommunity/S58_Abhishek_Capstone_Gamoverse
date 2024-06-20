@@ -144,7 +144,9 @@ data_routes.put("/updatedata/:id",async (req,res)=>{
     });
 
 
-    data_routes.patch("/updatedata/:id",async (req,res)=>{
+   
+
+data_routes.patch("/updatedata/:id",async (req,res)=>{
         let payload=req.body;
         let id=req.params.id
         console.log(id)
