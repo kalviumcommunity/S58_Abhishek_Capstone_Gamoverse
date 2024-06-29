@@ -1,48 +1,55 @@
-const express = require('express');
+const express =require('express');
 
-var data_routes=express.Router();
-const gameModel=require('../Model/DataModel')
+var data_routes= express.Router();
+const gameModel= require('../Model/DataModel')
 
 
  
 
 
-data_routes.get("/getdata",async(req,res)=>{
+data_routes.get ("/getdata",async(req,res)=>{
     
-    try{
+     
+ try{
    
-        const gamedata=await gameModel.find();
+        const gamedata= await gameModel.find();
    
-        res.send(gamedata);
+        res.send (gamedata);
    
-    }catch(err){
+    }catch (err) {
    
-        res.send(err)
+        res.send (err)
    
-    }
+     }
 
-})
-
-
+ })
 
 
-data_routes.post("/postdata", async (req, res) => {
 
-    console.log(req.body);
+
+data_routes.post ("/postdata", async (req, res) => {
+
+    console.log (req.body);
     
 
-    try {
-
-        const result=await gameModel.insertMany(req.body)
-
-        res.send("Posted the document successfully")
-
-    } catch (error) {
-
-        res.send(error)
-
-    }
     
+ try {
+
+        const result= await gameModel.insertMany(req.body)
+
+        res.send({ message: "Posted the document successfully" });
+
+
+    
+ } catch (error) {
+
+        
+  res.send(error)
+
+   
+ }
+    
+
 
 });
 
