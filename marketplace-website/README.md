@@ -25,10 +25,4 @@ Day 5.Frontend Development:
 Tech Stacks:
 React.js,Node.js,Express.js
 
-
-
-
-
-
-
 Deployed Link: https://incredible-sprite-0f7215.netlify.app/
