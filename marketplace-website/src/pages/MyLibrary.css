@@ -1,0 +1,171 @@
+.my-library {
+    padding: 20px;
+  }
+  
+  .my-library .container-fluid {
+    padding: 0 15px;
+  }
+  
+  .my-library-header {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  .my-library-empty {
+    margin-top: 20px; /* Add space from the top */
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .my-library-gameCard {
+    padding: 25px 20px;
+    margin-bottom: 10px;
+    width: calc(33.333% - 40px); 
+    height: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 40px;
+  }
+  
+  .my-library-gameCard img {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: center;
+    height: 50%;
+    width: 100%;
+  }
+  
+  .my-library-like {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    padding: 5px;
+    border-radius: 0 0 0 20px;
+    color: black;
+    display: flex;
+    transition: 0.3s;
+  }
+  
+  .my-library-like.active {
+    color: black;
+  }
+  
+  .my-library-gameFeature {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .my-library-gameTitle {
+    color: black;
+    margin-top: 10px;
+    font-family: 'Bouhas 93';
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .my-library-addBag {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background: black;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 20px 0;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  
+  .my-library-addBag:hover {
+    background: #333;
+  }
+  
+  .my-library-buyButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .my-library-buyButton:hover {
+    background-color: #333;
+  }
+  
+  .my-library-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .my-library-modalContent {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .my-library-closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .my-library-modalGameName {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .my-library-modalDescription {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .my-library-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .my-library-links a:hover {
+    background-color: #333;
+  }
