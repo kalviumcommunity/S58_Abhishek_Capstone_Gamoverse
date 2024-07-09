@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+// Imported the Gamecard.css file
 import "./GameCard.css";
 import GameRating from "./GameRating";
 import { AppContext } from "../App";
